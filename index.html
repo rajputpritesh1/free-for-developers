@@ -3,9 +3,72 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CogniSutra — Free Tiers for Developers</title>
+
+<!-- ===== PRIMARY SEO ===== -->
+<title>CogniSutra — Free Tiers for Developers | 500+ Free Dev Tools & Cloud Services</title>
+<meta name="description" content="Discover 500+ free tiers for developers — cloud platforms, hosting, databases, CI/CD, AI/ML APIs, and more. No credit card required. Curated by CogniSutra.">
+<meta name="keywords" content="free developer tools, free cloud hosting, free tier SaaS, free APIs for developers, free database hosting, free CI CD, free tier AWS GCP Azure, developer resources, free PaaS, free BaaS, cognisutra">
+<meta name="author" content="CogniSutra">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.cognisutra.in/">
+
+<!-- ===== OPEN GRAPH (Facebook, WhatsApp, LinkedIn) ===== -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.cognisutra.in/">
+<meta property="og:title" content="CogniSutra — 500+ Free Tiers for Developers">
+<meta property="og:description" content="The ultimate database of free SaaS, PaaS, and IaaS services for developers. No credit card. No nonsense.">
+<meta property="og:image" content="https://www.cognisutra.in/og-image.png">
+<meta property="og:site_name" content="CogniSutra">
+<meta property="og:locale" content="en_IN">
+
+<!-- ===== TWITTER CARD ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://www.cognisutra.in/">
+<meta name="twitter:title" content="CogniSutra — 500+ Free Tiers for Developers">
+<meta name="twitter:description" content="The ultimate database of free SaaS, PaaS, and IaaS services for developers. No credit card. No nonsense.">
+<meta name="twitter:image" content="https://www.cognisutra.in/og-image.png">
+<meta name="twitter:creator" content="@justpriteshrajput">
+
+<!-- ===== FAVICON ===== -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23030712'/><text y='72' x='50' text-anchor='middle' font-size='68' font-family='monospace' fill='%2300FFCC'>⊕</text></svg>">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23030712'/><text y='72' x='50' text-anchor='middle' font-size='68' font-family='monospace' fill='%2300FFCC'>⊕</text></svg>">
+
+<!-- ===== STRUCTURED DATA (JSON-LD) ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "CogniSutra",
+  "url": "https://www.cognisutra.in/",
+  "description": "A curated database of 500+ free tier SaaS, PaaS, and IaaS services for developers.",
+  "author": {
+    "@type": "Person",
+    "name": "Pritesh Rajput",
+    "url": "https://www.cognisutra.in"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.cognisutra.in/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<!-- ===== GOOGLE ADSENSE (replace ca-pub-XXXXXXXXXXXXXXXX with your Publisher ID) ===== -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<!-- ===== GOOGLE ANALYTICS (replace G-XXXXXXXXXX with your GA4 Measurement ID) ===== -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script> -->
+
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
+  /* ===== DARK MODE (default) ===== */
   :root {
     --cyan: #00FFCC;
     --blue: #0EA5E9;
@@ -21,6 +84,94 @@
     --text: #CBD5E1;
     --text-muted: #64748B;
     --text-bright: #F1F5F9;
+    --topbar-bg: rgba(3,7,18,0.8);
+    --scanline-opacity: 0.08;
+    --grid-opacity: 0.03;
+    --card-hover-bg: rgba(0,255,204,0.03);
+  }
+
+  /* ===== LIGHT MODE ===== */
+  [data-theme="light"] {
+    --cyan: #007A5E;
+    --blue: #0369A1;
+    --purple: #7C3AED;
+    --pink: #BE185D;
+    --green: #0891B2;
+    --bg: #F8FAFC;
+    --bg2: #FFFFFF;
+    --bg3: #F1F5F9;
+    --card: rgba(255,255,255,0.95);
+    --border: rgba(0, 122, 94, 0.2);
+    --border-hover: rgba(0, 122, 94, 0.5);
+    --text: #334155;
+    --text-muted: #94A3B8;
+    --text-bright: #0F172A;
+    --topbar-bg: rgba(248,250,252,0.92);
+    --scanline-opacity: 0;
+    --grid-opacity: 0.04;
+    --card-hover-bg: rgba(0,122,94,0.04);
+  }
+
+  [data-theme="light"] .grid-bg {
+    background-image:
+      linear-gradient(rgba(0,122,94,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,122,94,0.04) 1px, transparent 1px);
+  }
+  [data-theme="light"] .grid-bg::after {
+    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(14,165,233,0.06) 0%, transparent 70%),
+                radial-gradient(ellipse 60% 40% at 80% 80%, rgba(168,85,247,0.04) 0%, transparent 60%),
+                radial-gradient(ellipse 40% 30% at 20% 60%, rgba(0,122,94,0.04) 0%, transparent 50%);
+  }
+  [data-theme="light"] .scanlines { display: none; }
+  [data-theme="light"] .logo {
+    text-shadow: 0 0 10px rgba(0,122,94,0.3);
+  }
+  [data-theme="light"] .service-card { background: var(--bg2); border-bottom: 1px solid var(--border); }
+  [data-theme="light"] .cloud-card { background: var(--bg2); }
+  [data-theme="light"] .service-card:hover { background: var(--card-hover-bg); }
+  [data-theme="light"] ::-webkit-scrollbar-track { background: var(--bg3); }
+
+  /* ===== THEME TOGGLE BUTTON ===== */
+  .theme-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.7rem;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .theme-toggle:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+    background: rgba(0,255,204,0.04);
+  }
+  .theme-toggle .icon { font-size: 0.9rem; }
+
+  /* ===== AD SLOT STYLES ===== -->
+  .ad-slot {
+    max-width: 1400px;
+    margin: 0 auto 2rem;
+    padding: 0 2rem;
+    text-align: center;
+  }
+  .ad-slot ins { display: block; }
+  .ad-label {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.55rem;
+    color: var(--text-muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+    opacity: 0.5;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -93,7 +244,7 @@
     justify-content: space-between;
     padding: 1rem 2rem;
     border-bottom: 1px solid var(--border);
-    background: rgba(3,7,18,0.8);
+    background: var(--topbar-bg);
     backdrop-filter: blur(12px);
     position: sticky;
     top: 0;
@@ -377,7 +528,7 @@
     transition: transform 0.25s ease;
   }
 
-  .service-card:hover { background: rgba(0,255,204,0.03); }
+  .service-card:hover { background: var(--card-hover-bg); }
   .service-card:hover::before { transform: scaleY(1); }
 
   .service-name {
@@ -563,6 +714,10 @@
     <a href="https://github.com/rajputpritesh1/cognisutra-freefordev" target="_blank">GITHUB ↗</a>
     <a href="#contribute">CONTRIBUTE</a>
     <a href="#about">ABOUT</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+      <span class="icon" id="themeIcon">☀</span>
+      <span id="themeLabel">LIGHT</span>
+    </button>
   </div>
 </nav>
 
@@ -584,6 +739,21 @@
     <input type="text" id="search" placeholder="Search services, tools, platforms..." autocomplete="off" />
   </div>
 </section>
+
+<!-- ===== AD SLOT — BELOW HERO (replace data-ad-* values after AdSense approval) ===== -->
+<!-- Uncomment this block once your AdSense account is approved -->
+<!--
+<div class="ad-slot" aria-label="Advertisement">
+  <div class="ad-label">Advertisement</div>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+       data-ad-slot="XXXXXXXXXX"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+-->
 
 <!-- FILTER PILLS -->
 <div class="filters" id="filters">
@@ -1042,12 +1212,47 @@
 </div><!-- /#app -->
 
 <script>
+  /* ===== THEME TOGGLE ===== */
+  const html = document.documentElement;
+  const themeToggle = document.getElementById('themeToggle');
+  const themeIcon = document.getElementById('themeIcon');
+  const themeLabel = document.getElementById('themeLabel');
+
+  // Restore saved theme
+  const savedTheme = localStorage.getItem('cs-theme') || 'dark';
+  applyTheme(savedTheme);
+
+  function applyTheme(theme) {
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      themeIcon.textContent = '◐';
+      themeLabel.textContent = 'DARK';
+    } else {
+      html.removeAttribute('data-theme');
+      themeIcon.textContent = '☀';
+      themeLabel.textContent = 'LIGHT';
+    }
+  }
+
+  themeToggle.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+    const next = current === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    localStorage.setItem('cs-theme', next);
+  });
+
+  /* ===== SEARCH & FILTER ===== */
   const searchEl = document.getElementById('search');
   const pills = document.querySelectorAll('.pill');
   const sections = document.querySelectorAll('.section');
   const noResults = document.getElementById('no-results');
   let activeCat = 'all';
   let searchQuery = '';
+
+  // URL param support (?q=redis)
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlQ = urlParams.get('q');
+  if (urlQ) { searchEl.value = urlQ; searchQuery = urlQ.trim(); }
 
   function applyFilters() {
     let visibleCount = 0;
@@ -1064,12 +1269,10 @@
       if (!searchQuery) {
         section.style.display = '';
         visibleCount++;
-        // Show all cards
         section.querySelectorAll('.service-card, .cloud-card').forEach(c => c.style.display = '');
         return;
       }
 
-      // Search within section
       const q = searchQuery.toLowerCase();
       const cards = section.querySelectorAll('.service-card, .cloud-card');
       let cardVisible = 0;
@@ -1084,11 +1287,9 @@
         }
       });
 
-      // Check section header too
       const headerText = section.querySelector('.section-title')?.textContent.toLowerCase() || '';
       if (cardVisible > 0 || headerText.includes(q)) {
         section.style.display = '';
-        // If header matched, show all cards
         if (headerText.includes(q) && cardVisible === 0) {
           cards.forEach(c => c.style.display = '');
         }
@@ -1112,17 +1313,16 @@
       pill.classList.add('active');
       activeCat = pill.dataset.cat;
       applyFilters();
-
-      // Scroll to first visible section
       const first = document.querySelector('.section[style=""], .section:not([style])');
       if (first) first.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
 
-  // Stagger animation for sections
   sections.forEach((s, i) => {
     s.style.animationDelay = `${i * 0.05}s`;
   });
+
+  applyFilters();
 </script>
 </body>
 </html>
